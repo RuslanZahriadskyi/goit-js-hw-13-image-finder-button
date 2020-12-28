@@ -1,4 +1,4 @@
-import './styles.css';
+import css from './styles.css';
 import 'material-design-icons/iconfont/material-icons.css';
 import newCard from './js/apiService';
 import refs from './js/refs';
@@ -15,6 +15,7 @@ function galleryOnSubmit(e) {
 
   const form = e.currentTarget;
   newCard.query = form.elements.query.value;
+  refs.btnViewMoreRef.style.display = 'block';
 
   refs.galleryRef.innerHTML = '';
   form.reset();
