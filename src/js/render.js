@@ -12,7 +12,7 @@ function render() {
     loadMoreBtn.enable();
     loadMoreBtn.show();
     refs.galleryRef.insertAdjacentHTML('beforeend', markup(hits));
-    window.scrollTo(0, newCard.scrollPerPage);
+    window.scrollTo(0, document.documentElement.scrollHeight);
   });
 }
 
